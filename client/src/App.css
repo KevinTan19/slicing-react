@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .home-header{
   display: flex;
@@ -128,15 +128,33 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin: 5% 10% 5% 10%;
 }
 
 .body-card{
-  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+  height: 10%;
+}
+
+.container-card {
+  text-align: center;
 }
 
 .card-img{
   width: 200px;
   height: 200px;
+}
+
+.container-quote {
+  margin: 5% 10% 5% 10%;
+}
+
+.container-quote a {
+  color: orangered;
 }
 
 .home-footer{

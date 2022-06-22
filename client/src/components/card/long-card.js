@@ -18,7 +18,7 @@ function LongCard(props) {
     } else if (props.className === "body-longcard-1") {
       setTitle("Lelah, Burn Out,Cemas");
       setContent(
-        "Jerih payah yang membuahkan hasil tidak luput dari dampak bagi kesehatan fisik dan mental. Tidak sedikit yang gagal mencapai tujuan hanya karena kena mentalnya"
+        `Jerih payah yang membuahkan hasil tidak luput dari dampak bagi kesehatan fisik dan mental. Tidak sedikit yang gagal mencapai tujuan hanya karena kena mentalnya`
       );
       setImg(
         "https://static.vecteezy.com/system/resources/previews/000/546/005/non_2x/cartoon-cute-summer-cat-sleeping-vector.jpg"

@@ -1,6 +1,7 @@
 import LongCard from "../components/card/long-card";
 import BodyCard from "../components/card/body-card";
 import NavBar from "../components/navbar";
+import { NavLink } from "react-router-dom";
 function HomePage() {
   return (
     <div>
@@ -17,6 +18,21 @@ function HomePage() {
           <BodyCard className="body-card-1" />
           <BodyCard className="body-card-2" />
           <BodyCard className="body-card-3" />
+        </div>
+        <div className="container-quote">
+          <h1>Good productivity with a good mentality</h1>
+          <p>
+            "Anything that's human is mentionable,and anything that is
+            mentionable can be more manageable. When we can talk about our
+            feelings, the become less overhelming, less upsetting and less
+            scary" --Fred Rogers
+          </p>
+          <p>
+            Ready for our release?
+            <span>
+              <NavLink to="/services">Let's talk later</NavLink>
+            </span>
+          </p>
         </div>
       </body>
       <footer className="home-footer">
