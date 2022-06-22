@@ -48,7 +48,7 @@
   background-color: rgb(127, 214, 255);
   margin: 0;
   text-align: start;
-  
+  padding-bottom: 5%;
 }
 
 .home-title{
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10px 5% 10px 5%;
+  margin: 5% 5% 10px 5%;
 }
 
 .home-container{
@@ -77,8 +77,7 @@
   color: rgb(127, 214, 255);
   text-align: center;
   text-decoration: none;
-  font-size: 12px;
-  
+  font-size: 16px;
   width: 100px;
   border: rgb(91, 168, 204);
 }
@@ -104,6 +103,7 @@
   display: flex;
   list-style: none;
   flex-direction: row;
+  margin-right: 5%;
 }
 
 .nav-link ul{
@@ -123,7 +123,6 @@
 .body-container-longcard{
   display: flex;
   flex-direction: column;
-  /* margin: 10px; */
 }
 
 .body-container-card{
