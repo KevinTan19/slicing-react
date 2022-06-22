@@ -15,7 +15,7 @@ function Body() {
       </div>
       <div className="container-quote">
         <h1>Good productivity with a good mentality</h1>
-        <p>
+        <p className="quote">
           "Anything that's human is mentionable,and anything that is mentionable
           can be more manageable. When we can talk about our feelings, the
           become less overhelming, less upsetting and less scary" --Fred Rogers
@@ -23,7 +23,7 @@ function Body() {
         <p>
           Ready for our release?
           <span>
-            <NavLink to="/services">Let's talk later</NavLink>
+            <NavLink to="/services"> Let's talk later</NavLink>
           </span>
         </p>
       </div>

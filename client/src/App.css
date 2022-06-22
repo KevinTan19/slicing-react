@@ -38,7 +38,7 @@
 } */
 
 .App {
-  font-size: large;
+  font-size: x-large;
 }
 
 .home-header{
@@ -74,12 +74,13 @@
 .home-container button {
   background-color: yellow;
   border-radius: 24px;
-  color: rgb(127, 214, 255);
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  width: 100px;
-  border: rgb(91, 168, 204);
+  height:50px;
+  width: 150px;
+  border-color: rgb(64, 160, 250);
+  color: rgb(64, 160, 250);
 }
 
 .home-img{
@@ -110,8 +111,14 @@
   padding-left: 0;
 }
 
-.nav-link li {
+.nav-link a {
   padding: 0px 20px;
+  font-size: medium;
+  text-decoration: none;
+}
+
+.nav-logo a {
+  text-decoration: none;
 }
 
 .home-body{
@@ -143,6 +150,7 @@
 
 .container-card {
   text-align: center;
+  font-size: xx-large;
 }
 
 .card-img{
@@ -155,6 +163,10 @@
   text-align: center;
 }
 
+.quote {
+  font-style: oblique;
+}
+
 .container-quote a {
   color: orangered;
 }
@@ -163,20 +175,27 @@
   display: flex;
   flex-direction: row;
   background-color: rgb(255, 247, 173);
+  justify-content: space-between;
+  font-size: medium;
+  font-style: inherit;
 }
 
 .footer-container{
   padding: 5% 0% 5% 5%;
+  width: 40%;
 }
 
 .footer-menu{
+  display: flex;
   align-self: center;
   height: 100%;
+  margin-right: 10%;
 }
 
 .footer-link{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  height: 100%;
+  justify-content: space-around;
   list-style: none;
 }
