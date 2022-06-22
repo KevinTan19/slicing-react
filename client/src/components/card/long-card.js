@@ -5,6 +5,7 @@ function LongCard(props) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [img, setImg] = useState("");
+  const [name, setName] = useState("container-longcard");
 
   useEffect(() => {
     if (props.className === "header-longcard") {
@@ -23,6 +24,7 @@ function LongCard(props) {
       setImg(
         "https://static.vecteezy.com/system/resources/previews/000/546/005/non_2x/cartoon-cute-summer-cat-sleeping-vector.jpg"
       );
+      setName("container-longcard-2");
     } else if (props.className === "body-longcard-2") {
       setTitle("Together we can recover your pain");
       setContent(
@@ -35,7 +37,7 @@ function LongCard(props) {
     // eslint-disable-next-line
   }, []);
   return (
-    <div className="container-longcard">
+    <div className={name}>
       <div className="home-container">
         <h1 className="home-title">{title}</h1>
         <p>{content}</p>
