@@ -37,12 +37,15 @@
   }
 } */
 
+.App {
+  font-size: large;
+}
+
 .home-header{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: rgb(127, 214, 255);
-  height: 60;
   margin: 0;
   text-align: start;
   
@@ -57,14 +60,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10px;
+  margin: 10px 5% 10px 5%;
 }
 
 .home-container{
   display: flex;
   flex-direction: column;
   margin-left: 5%;
-  margin-right: auto;
+  margin-right: 5%;
   text-align: left;
 }
 
@@ -83,7 +86,6 @@
 .home-img{
   width: 300px;
   height: 300px;
-  margin-right: auto;
 }
 
 .navbar{
@@ -121,7 +123,7 @@
 .body-container-longcard{
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .body-container-card{
@@ -161,7 +163,7 @@
 .home-footer{
   display: flex;
   flex-direction: row;
-  background-color: rgb(240, 255, 173);
+  background-color: rgb(255, 247, 173);
 }
 
 .footer-container{
