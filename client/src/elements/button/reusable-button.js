@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
 function ReusableButton(props) {
   const [content, setContent] = useState("");
@@ -10,7 +11,11 @@ function ReusableButton(props) {
     // eslint-disable-next-line
   }, []);
 
-  return <button>{content}</button>;
+  return (
+    <button>
+      <NavLink to="/articles/1">{content}</NavLink>
+    </button>
+  );
 }
 
 export default ReusableButton;

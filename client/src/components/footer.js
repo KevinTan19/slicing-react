@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import CopyrightRehat from "./copyright/copyright-rehat";
+import CopyrightRehat from "../elements/copyright/copyright-rehat";
 
 function Footer() {
   return (

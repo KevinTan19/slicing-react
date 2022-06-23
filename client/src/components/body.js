@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import BodyCard from "../components/card/body-card";
-import LongCard from "../components/card/long-card";
+import BodyCard from "../elements/card/body-card";
+import LongCard from "../elements/card/long-card";
 function Body() {
   return (
     <>
