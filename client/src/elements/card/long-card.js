@@ -26,21 +26,19 @@ function LongCard(props) {
       );
       setName("container-longcard-2");
     } else if (props.className === "body-longcard-2") {
-      if (props.post) {
-        setTitle(props.post.title);
-        setContent(props.post.body);
-        setImg(
-          "https://as2.ftcdn.net/v2/jpg/02/69/15/47/1000_F_269154752_IU4Ub7UXy1mmQ8TdEYWbIlD4pKDd9NEH.jpg"
-        );
-      } else {
-        setTitle("Together we can recover your pain");
-        setContent(
-          "Saat workload atau beban belajar mudah untuk ditangani, siapapun akan lebih produktif. Yuk, cobain bagaimana caranya meringankan beban"
-        );
-        setImg(
-          "https://as2.ftcdn.net/v2/jpg/02/69/15/47/1000_F_269154752_IU4Ub7UXy1mmQ8TdEYWbIlD4pKDd9NEH.jpg"
-        );
-      }
+      setTitle("Together we can recover your pain");
+      setContent(
+        "Saat workload atau beban belajar mudah untuk ditangani, siapapun akan lebih produktif. Yuk, cobain bagaimana caranya meringankan beban"
+      );
+      setImg(
+        "https://as2.ftcdn.net/v2/jpg/02/69/15/47/1000_F_269154752_IU4Ub7UXy1mmQ8TdEYWbIlD4pKDd9NEH.jpg"
+      );
+    } else if (props.className === "article-body-longcard") {
+      setTitle(props.post.title);
+      setContent(props.post.body);
+      setImg(
+        "https://as2.ftcdn.net/v2/jpg/02/69/15/47/1000_F_269154752_IU4Ub7UXy1mmQ8TdEYWbIlD4pKDd9NEH.jpg"
+      );
     }
     // eslint-disable-next-line
   }, []);
@@ -49,8 +47,12 @@ function LongCard(props) {
       <div className="home-container">
         <h1 className="home-title">{title}</h1>
         <p>{content}</p>
-        {props.className === "header-longcard" && (
-          <ReusableButton className={props.className} />
+        {(props.className === "header-longcard" ||
+          props.className === "article-body-longcard") && (
+          <ReusableButton
+            className={props.className}
+            articleId={props.post?.id}
+          />
         )}
       </div>
       <img src={img} alt="cat-relax" className="home-img"></img>

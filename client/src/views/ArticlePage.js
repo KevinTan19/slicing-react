@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import Footer from "../components/footer";
 import NavBar from "../components/navbar";
 import LongCard from "../elements/card/long-card";
+import SpinnerLoading from "../elements/loading/spinner-loading";
 import useFetch from "../hooks/useFetch";
 
 export default function ArticlePage() {
@@ -38,18 +39,12 @@ export default function ArticlePage() {
       <NavBar />
 
       <div className="article-body">
-        {isLoading && (
-          <div className="spinner-container">
-            <div className="loading-spinner"></div>
-          </div>
-        )}
-
-        {/* {data.map((el) => {
-          return <LongCard className="body-longcard-2" post={el} key={el.id} />;
-        })} */}
+        {isLoading && <SpinnerLoading />}
 
         {currentPage.map((el) => {
-          return <LongCard className="body-longcard-2" post={el} key={el.id} />;
+          return (
+            <LongCard className="article-body-longcard" post={el} key={el.id} />
+          );
         })}
 
         <ul className="pagination-list">

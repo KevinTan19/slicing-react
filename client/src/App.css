@@ -222,13 +222,15 @@ button a {
 
 .pagination-list a {
   text-decoration: none;
-  height: 10px;
-  width: 10px;
 }
 
 .active{
   background-color: #666;
   color: white;
+}
+
+.detail-article-body {
+  margin: 5% 5% 10px 5%;
 }
 
 .home-footer{
