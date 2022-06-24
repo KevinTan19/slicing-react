@@ -39,6 +39,7 @@ function LongCard(props) {
       setImg(
         "https://as2.ftcdn.net/v2/jpg/02/69/15/47/1000_F_269154752_IU4Ub7UXy1mmQ8TdEYWbIlD4pKDd9NEH.jpg"
       );
+      setName("article-container-longcard");
     }
     // eslint-disable-next-line
   }, []);

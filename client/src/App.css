@@ -99,6 +99,17 @@ button a {
   margin: 5% 5% 10px 5%;
 }
 
+.article-container-longcard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 25px 5% 25px 5%;
+}
+
+.article-body > .article-container-longcard:nth-child(odd) {
+  background-color: rgb(205, 202, 255);
+}
+
 .home-container{
   display: flex;
   flex-direction: column;
@@ -228,7 +239,7 @@ button a {
 }
 
 
-.active{
+.pagination-list > li > .active{
   background-color: #666;
   color: white;
 }
