@@ -86,9 +86,9 @@ button a {
 
 .container-longcard {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 5% 5% 10px 5%;
+  margin: 5% 25px 10px 25px;
 }
 
 .container-longcard-2 {
@@ -105,6 +105,8 @@ button a {
   align-items: center;
   padding: 25px 5% 25px 5%;
 }
+
+
 
 .article-body > .article-container-longcard:nth-child(odd) {
   background-color: rgb(205, 202, 255);
@@ -184,7 +186,7 @@ button a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 5% 10% 5% 10%;
+  margin: 5%;
 }
 
 .body-card{
@@ -202,26 +204,43 @@ button a {
 }
 
 .card-img{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 
 .container-quote {
-  margin: 0% 10% 5% 10%;
+  margin: 0% 15% 5% 15%;
   text-align: center;
 }
 
 .quote {
   font-style: oblique;
+  font-size: xx-large;
 }
+
 
 .container-quote a {
   color: orangered;
 }
 
+.home-header{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* background-color: rgb(127, 214, 255); */
+  /* margin: 0; */
+  padding-bottom: 5%;
+}
+
+.article-title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .article-body {
   background-color: rgb(221, 221, 221);
-  padding: 5% 0% 5% 0%;
+  padding-bottom: 5%;
 }
 
 .pagination-list {

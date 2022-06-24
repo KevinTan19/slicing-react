@@ -14,11 +14,14 @@ function Body() {
         <BodyCard className="body-card-3" />
       </div>
       <div className="container-quote">
-        <h1>Good productivity with a good mentality</h1>
+        <h2>Good productivity with a good mentality</h2>
         <p className="quote">
           "Anything that's human is mentionable,and anything that is mentionable
           can be more manageable. When we can talk about our feelings, the
-          become less overhelming, less upsetting and less scary" --Fred Rogers
+          become less overhelming, less upsetting and less scary."
+          <span>
+            <b> — Fred Rogers</b>
+          </span>
         </p>
         <p>
           Ready for our release?

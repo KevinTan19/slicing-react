@@ -43,8 +43,10 @@ export default function ArticlePage() {
 
   return (
     <>
-      <NavBar />
-
+      <div className="article-header">
+        <NavBar />
+        <h1 className="article-title">Article Page</h1>
+      </div>
       <div className="article-body">
         {isLoading && <SpinnerLoading />}
         {isError && <ToastContainer />}
