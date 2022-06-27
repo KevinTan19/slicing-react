@@ -106,8 +106,6 @@ button a {
   padding: 25px 5% 25px 5%;
 }
 
-
-
 .article-body > .article-container-longcard:nth-child(odd) {
   background-color: rgb(205, 202, 255);
 }
@@ -128,6 +126,18 @@ button a {
   font-size: 16px;
   height:50px;
   width: 150px;
+  border-color: rgb(64, 160, 250);
+  color: rgb(64, 160, 250);
+}
+
+form button {
+  background-color: yellow;
+  border-radius: 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  height:50px;
+  width: 100px;
   border-color: rgb(64, 160, 250);
   color: rgb(64, 160, 250);
 }
@@ -175,11 +185,13 @@ button a {
 .home-body{
   display: flex;
   flex-direction: column;
+  margin-bottom: 5%;
 }
 
 .body-container-longcard{
   display: flex;
   flex-direction: column;
+  margin-bottom: 10%;
 }
 
 .body-container-card{
@@ -218,18 +230,22 @@ button a {
   font-size: xx-large;
 }
 
-
 .container-quote a {
   color: orangered;
 }
 
-.home-header{
+.service-header{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: center;
   /* justify-content: space-between; */
   /* background-color: rgb(127, 214, 255); */
   /* margin: 0; */
-  padding-bottom: 5%;
+}
+
+.service-header h1 {
+  margin-bottom: 0;
 }
 
 .article-title {
@@ -257,7 +273,6 @@ button a {
   border: 1px solid rgb(54, 52, 44);
 }
 
-
 .pagination-list > li > .active{
   background-color: #666;
   color: white;
@@ -265,6 +280,17 @@ button a {
 
 .detail-article-body {
   margin: 5% 5% 10px 5%;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.service-body {
+  margin: 5%;
 }
 
 .home-footer{
@@ -291,8 +317,8 @@ button a {
 .footer-link{
   display: flex;
   flex-direction: column;
-  height: 100%;
-  justify-content: space-around;
+  height: 25vh;
+  justify-content: space-between;
   list-style: none;
 }
 

@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import HomePage from "./views/HomePage";
 import ArticlePage from "./views/ArticlePage";
 import DetailPage from "./views/DetailPage";
+import ServicePage from "./views/ServicePage";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
             <Route path=":page" element={<ArticlePage />} />
           </Route>
           <Route path="/about" element={<HomePage />} />
-          <Route path="/services" element={<HomePage />} />
+          <Route path="/services" element={<ServicePage />} />
           <Route path="/contact" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
