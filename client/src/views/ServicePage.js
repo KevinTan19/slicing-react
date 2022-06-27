@@ -9,6 +9,39 @@ export default function ServicePage() {
     "Birth Date",
     "Address",
   ]);
+  const [fullName, setFullName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [birthDate, setBirthDate] = useState("");
+  const [address, setAddress] = useState("");
+
+  const inputHandler = (value, name) => {
+    switch (name) {
+      case "Full Name":
+        setFullName(value);
+        break;
+      case "Phone Number":
+        setPhoneNumber(value);
+        break;
+      case "Birth Date":
+        setBirthDate(value);
+        break;
+      case "Address":
+        setAddress(value);
+        break;
+      default:
+        break;
+    }
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    console.log({
+      fullName,
+      phoneNumber,
+      birthDate,
+      address,
+    });
+  };
   return (
     <>
       <div className="service-header">
@@ -16,14 +49,33 @@ export default function ServicePage() {
         <h1>REHAT Form</h1>
       </div>
       <div className="service-body">
-        <form className="service-form">
+        <form className="service-form" onSubmit={submitHandler}>
           {inputField.map((el) => {
-            return (
-              <>
-                <label for={el.toLowerCase().replace(" ", "-")}>{el}</label>
-                <input type="text" />
-              </>
-            );
+            if (el === "Birth Date") {
+              return (
+                <>
+                  <label for={el.toLowerCase().replace(" ", "-")}>{el}</label>
+                  <input
+                    type="date"
+                    onChange={(e) => {
+                      inputHandler(e.target.value, el);
+                    }}
+                  />
+                </>
+              );
+            } else {
+              return (
+                <>
+                  <label for={el.toLowerCase().replace(" ", "-")}>{el}</label>
+                  <input
+                    type="text"
+                    onChange={(e) => {
+                      inputHandler(e.target.value, el);
+                    }}
+                  />
+                </>
+              );
+            }
           })}
           <button type="submit">Submit</button>
         </form>

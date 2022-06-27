@@ -287,6 +287,15 @@ input[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
+  border-color: rgb(64, 160, 250);
+}
+
+input[type=date] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-color: rgb(64, 160, 250);
 }
 
 .service-body {
